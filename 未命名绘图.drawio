@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-25T21:04:49.264Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="549B1xIc1_ch3mvIgKif" version="21.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-25T21:09:09.567Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="pnDMw2Xnw0ouCfbOVERT" version="21.5.0" type="github">
   <diagram name="第 1 页" id="i18JGJ34kbMfS3A-ol3H">
     <mxGraphModel dx="1834" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -36,6 +36,9 @@
         </mxCell>
         <mxCell id="L6RwBhN4z3n0MRpypiLH-8" value="读取所有设备数量 dev-&amp;gt;getDeviceCount()&lt;br&gt;遍历所有设备：&lt;br&gt;获取设备的serialNumber&lt;br&gt;Device Mode(XEM7310/XEM6310)&lt;br&gt;根据板子是USB2/USB3确定configure bit文件，并上传&lt;br&gt;然后再读取BoardMode,确定设备的类型（RHDControl）&lt;br&gt;读取连接芯片的SPI数（最大8个）&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-157" y="172" width="316" height="113" as="geometry" />
+        </mxCell>
+        <mxCell id="L6RwBhN4z3n0MRpypiLH-9" value="将设备列表&lt;br&gt;可视化到boardselectdialog窗口" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="237" y="188" width="184" height="41" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
