@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-25T21:09:09.567Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="pnDMw2Xnw0ouCfbOVERT" version="21.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-25T21:19:29.690Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="crEwnlR0LvSyQxtUiAyN" version="21.5.0" type="github">
   <diagram name="第 1 页" id="i18JGJ34kbMfS3A-ol3H">
     <mxGraphModel dx="1834" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -38,7 +38,10 @@
           <mxGeometry x="-157" y="172" width="316" height="113" as="geometry" />
         </mxCell>
         <mxCell id="L6RwBhN4z3n0MRpypiLH-9" value="将设备列表&lt;br&gt;可视化到boardselectdialog窗口" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="237" y="188" width="184" height="41" as="geometry" />
+          <mxGeometry x="235" y="159" width="184" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="L6RwBhN4z3n0MRpypiLH-10" value="创建一个rhxController&lt;br&gt;controllerInterface&lt;br&gt;CommandParser&lt;br&gt;ControlWindow&lt;br&gt;并绑定所有signal和slot" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="130" width="140" height="84" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
