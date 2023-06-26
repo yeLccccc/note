@@ -1,68 +1,20 @@
-<mxfile host="app.diagrams.net" modified="2023-06-26T00:39:22.787Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="rG-2s7xEg0eZoAEraIp6" version="21.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-26T10:32:22.342Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="Y5gFyCzNkiDe9ibdgxA0" version="21.5.0" type="github">
   <diagram name="第 1 页" id="i18JGJ34kbMfS3A-ol3H">
-    <mxGraphModel dx="1834" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="872" dy="746" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="L6RwBhN4z3n0MRpypiLH-1" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 20px;&quot;&gt;IntanRHX程序启动&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-215" y="99" width="176" height="60" as="geometry" />
+        <mxCell id="_I5AQsSSmcMobLPNc-vN-1" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="243" y="156" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="L6RwBhN4z3n0MRpypiLH-2" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 20px;&quot;&gt;获取FPGA设备连接列表&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="81" y="94" width="176" height="60" as="geometry" />
+        <mxCell id="_I5AQsSSmcMobLPNc-vN-2" value="cpntroller-&amp;gt;redDataBlocksRaw读取数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-343" y="91" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="L6RwBhN4z3n0MRpypiLH-3" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 20px;&quot;&gt;选择设备启动&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="415" y="91" width="176" height="60" as="geometry" />
+        <mxCell id="_I5AQsSSmcMobLPNc-vN-3" value="RHXDataBlock::checkUsbHeader&lt;br&gt;检测数据帧头，找到两正确帧头里的数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-370" y="207" width="196" height="98" as="geometry" />
         </mxCell>
-        <mxCell id="L6RwBhN4z3n0MRpypiLH-4" value="&lt;font face=&quot;宋体&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;主窗口&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="791" y="94" width="176" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="L6RwBhN4z3n0MRpypiLH-5" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-34" y="132" as="sourcePoint" />
-            <mxPoint x="71" y="132" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="L6RwBhN4z3n0MRpypiLH-6" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="267" y="123.5" as="sourcePoint" />
-            <mxPoint x="401" y="126" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="L6RwBhN4z3n0MRpypiLH-7" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="598" y="123.5" as="sourcePoint" />
-            <mxPoint x="773" y="124" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="L6RwBhN4z3n0MRpypiLH-8" value="读取所有设备数量 dev-&amp;gt;getDeviceCount()&lt;br&gt;遍历所有设备：&lt;br&gt;获取设备的serialNumber&lt;br&gt;Device Mode(XEM7310/XEM6310)&lt;br&gt;根据板子是USB2/USB3确定configure bit文件，并上传&lt;br&gt;然后再读取BoardMode,确定设备的类型（RHDControl）&lt;br&gt;读取连接芯片的SPI数（最大8个）&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-157" y="172" width="316" height="113" as="geometry" />
-        </mxCell>
-        <mxCell id="L6RwBhN4z3n0MRpypiLH-9" value="将设备列表&lt;br&gt;可视化到boardselectdialog窗口" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="235" y="159" width="184" height="41" as="geometry" />
-        </mxCell>
-        <mxCell id="L6RwBhN4z3n0MRpypiLH-10" value="创建一个rhxController&lt;br&gt;controllerInterface&lt;br&gt;CommandParser&lt;br&gt;ControlWindow&lt;br&gt;并绑定所有signal和slot" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="610" y="130" width="140" height="84" as="geometry" />
-        </mxCell>
-        <mxCell id="L6RwBhN4z3n0MRpypiLH-11" value="identifyController" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-185" y="439" width="123" height="92" as="geometry" />
-        </mxCell>
-        <mxCell id="L6RwBhN4z3n0MRpypiLH-12" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-47" y="491" as="sourcePoint" />
-            <mxPoint x="58" y="491" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="L6RwBhN4z3n0MRpypiLH-13" value="&lt;font face=&quot;宋体&quot;&gt;uploadFpgaBitfileQMessageBox&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="93" y="444" width="170" height="72" as="geometry" />
-        </mxCell>
-        <mxCell id="L6RwBhN4z3n0MRpypiLH-14" value="&lt;font face=&quot;宋体&quot;&gt;dev-&amp;gt;ConfigureFPGA(filename.toStdString());&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="415" y="444" width="271" height="72" as="geometry" />
-        </mxCell>
-        <mxCell id="L6RwBhN4z3n0MRpypiLH-15" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="282" y="487.5" as="sourcePoint" />
-            <mxPoint x="387" y="487.5" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="_I5AQsSSmcMobLPNc-vN-4" value="usbFifo-&amp;gt;writeToBuffer&lt;br&gt;将uint_8数据转换成uint_16数据&lt;br&gt;并写入usbfifo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-370" y="347" width="196" height="98" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
